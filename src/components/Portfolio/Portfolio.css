@@ -1,0 +1,61 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: pink; /* Pink background */
+    color: black; /* Black text */
+}
+
+.portfolio-content {
+    width: 90%;
+    max-width: 1400px; /* Increase max-width for a larger display */
+    margin: 0 auto;
+}
+
+.portfolio-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black; /* Black title */
+}
+
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px; /* More space between items */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink; /* Background color for image container */
+    width: 300px; /* Set a fixed width for medium size */
+    height: 300px; /* Set a fixed height for medium size */
+}
+
+.frame {
+    border: 10px solid rgb(255, 255, 255); /* Black frame */
+    padding: 5px; /* Space between the frame and the image */
+    border-radius: 10px; /* Rounded corners for the frame */
+    background-color: rgb(255, 255, 255); /* Background color of the frame */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    display: inline-block; /* Allow frame to fit the image size */
+}
+
+.portfolio-image {
+    width: 100%; /* Set to 100% to fill the frame */
+    height: 100%; /* Set to 100% to fill the frame */
+ /* Ensure the entire image is visible */
+    border-radius: px; /* Rounded corners for the image */
+}
+
+.image-title {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: black;
+    text-align: center;
+}

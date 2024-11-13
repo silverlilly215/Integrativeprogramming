@@ -1,0 +1,91 @@
+.skills {
+    background: linear-gradient(135deg, #070607, #444);
+    padding: 30px;
+    border-radius: 15px;
+    color: rgb(251, 119, 209);
+    max-width: 1200px;
+    height: auto;
+    margin: 20px auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    color: pink;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: calc(20% - 20px); /* 5 items per row */
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    color: pink;
+    margin-bottom: 5px;
+}
+
+.skill-info {
+    text-align: center;
+}
+
+.pie-chart {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.skill-name {
+    color: pink;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.skill-label {
+    color: white;
+    font-weight: bold;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    .skill {
+        width: calc(25% - 20px); /* 4 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .skill {
+        width: calc(33.333% - 20px); /* 3 items per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}
+
+@media (max-width: 320px) {
+    .skill {
+        width: 100%; /* 1 item per row on very small screens */
+    }
+}

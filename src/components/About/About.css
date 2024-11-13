@@ -1,0 +1,67 @@
+.about {
+    display: flex;
+    align-items: center;
+    max-width: 1200px; /* Max width for better readability */
+    margin: 50px auto; /* Center the component */
+    padding: 20px;
+    background-color: rgba(255, 224, 236, 0.8); /* Light baby pink background */
+    border-radius: 15px; /* Rounded corners for softness */
+    box-shadow: 0 4px 30px rgba(255, 105, 180, 0.3); /* Soft pink shadow */
+    overflow: hidden; /* Hide overflow */
+}
+
+.about-image-container {
+    flex: 1; /* Takes up equal space */
+    display: flex;
+    justify-content: center; /* Center the image */
+    padding: 20px; /* Padding around image */
+    background-image: url('/public/profile.png'); /* Path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    height: 300px; /* Set a fixed height for the image container */
+    border-radius: 10px; /* Rounded corners for the image container */
+}
+
+.about-text {
+    flex: 2; /* Takes up more space for text */
+    padding: 20px; /* Padding around text */
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #ff6fae; /* Darker pink for headers */
+    margin-bottom: 15px;
+    text-align: left; /* Align header to the left */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6; /* Improved readability */
+    color: #1a1a1a; /* Dark text for contrast */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack image and text */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-image-container {
+        padding: 10px; /* Reduced padding */
+        height: 200px; /* Adjust height for smaller screens */
+    }
+
+    .about-text {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .about-text h2 {
+        font-size: 2rem; /* Smaller header for mobile */
+    }
+
+    .about-text p {
+        font-size: 1rem; /* Smaller text for mobile */
+    }
+}
